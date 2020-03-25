@@ -1,0 +1,57 @@
+.form-authorization {
+    width: 300px;
+    padding: 30px;
+    margin: 200px auto 200px;
+    background-color: rgba(27, 27, 27, 0.95);
+    border-radius: 20px;
+    color: #eeeeee;
+    text-shadow: 0px 0px 1px gray;
+    box-shadow: 0px 0px 3px #333;
+}
+
+.form-authorization h3 {
+    font-size: 30px;
+    margin: 0px 0px 25px 0px;
+    text-align: center;
+}
+
+.form-authorization label {
+    font-size: 25px;
+    text-align: center;
+}
+
+.form-authorization input {
+    font-size: 25px;
+    outline: none;
+}
+
+.form-authorization .submit {
+    width: 135px;
+    padding: 10px;
+    margin: 10px 5px 0 5px;
+    border-radius: 5px;
+    border-color: #9c9c9c;
+    background-color: #666;
+    color: #eee;
+    transition: 0.5s;
+}
+
+.form-authorization .submit:hover{
+    background-color: #444;
+}
+
+.form-authorization .red_button {
+    background-color: #c70000;
+}
+
+.form-authorization .red_button:hover {
+    background-color: #a70000;
+}
+
+.form-authorization .green_button {
+    background-color: #288c00;
+}
+
+.form-authorization .green_button:hover {
+    background-color: #1e6900;
+}

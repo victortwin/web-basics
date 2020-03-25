@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/data-entry-form.css">
+</head>
+
+<body>
+<header>
+    <h1>Moto World</h1>
+</header>
+
+<section>
+    <article>
+        <form class="form-authorization" action="shop.html" method="post">
+            <h3>Welcome to the Moto World!</h3>
+            <p>Please <strong>login</strong> or <strong>register</strong>.</p>
+            <hr>
+            <p>
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login" class="text" size="15" required><br>
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" class="text" size="15" required><br>
+            </p>
+            <p>
+                <input type="submit" class="submit green_button" value="Log In">
+                <input type="button" class="submit" value="Register" onclick="location.href='registration.html'">
+            </p>
+        </form>
+    </article>
+</section>
+<footer>
+    <small>Izhevsk Java Online Course 2019 &ndash; 2020</small>
+</footer>
+</body>
+
+</html>

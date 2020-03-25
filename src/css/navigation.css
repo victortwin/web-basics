@@ -1,0 +1,37 @@
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(27, 27, 27, 0.85);
+    font-size: 20px;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li.right {
+    float: right;
+}
+
+ul.nav a {
+    display: block;
+    color: #e37615;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+ul.nav a:hover {
+    background-color: #111;
+}
+
+ul.right li {
+    float: right;
+}
+
+img.nav {
+    width: 12px;
+    height: 20px;
+}

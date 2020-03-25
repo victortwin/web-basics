@@ -1,0 +1,39 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-color: rgba(27, 27, 27, 0.73);
+    color: rgb(227, 118, 21);
+    padding: 2px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 7px;
+    text-shadow: 0 0 6px rgb(255, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+body {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+article {
+    background-color: rgba(190, 168, 126, 0.4);
+    padding: 10px;
+}
+
+footer {
+    background-color: rgba(85, 85, 85, 0.42);
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

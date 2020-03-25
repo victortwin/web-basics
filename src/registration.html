@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/data-entry-form.css">
+</head>
+
+<body>
+<header>
+    <h1>Moto World</h1>
+</header>
+
+<section>
+    <article>
+        <form class="form-authorization" action="shop.html" method="post">
+            <h3>Registration</h3>
+            <hr>
+            <p>
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login" class="text" size="15" required><br>
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" class="text" size="15" required><br>
+            </p>
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" class="text" size="15" required><br>
+            </p>
+            <p>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+            <p>
+                <input type="radio" id="customer" name="role">
+                <label for="customer">Customer</label><br>
+                <input type="radio" id="admin" name="role">
+                <label for="admin">Administrator</label><br>
+            </p>
+            <p>
+                <input type="submit" class="submit" value="Register">
+                <input type="button" class="submit red_button" value="Cancel" onclick="location.href='login.html'">
+            </p>
+        </form>
+    </article>
+</section>
+<footer>
+    <small>Izhevsk Java Online Course 2019 &ndash; 2020</small>
+</footer>
+</body>
+
+</html>

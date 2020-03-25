@@ -1,0 +1,98 @@
+div.category {
+    background-color: rgba(221, 221, 221, 0.27);
+    width: 1000px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.category-img {
+    width: 300px;
+    box-shadow: 1px 3px 4px gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 10px;
+}
+.add-img {
+    width: 100px;
+    box-shadow: 1px 3px 4px gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.content .category-img {
+    width: 500px;
+    margin: 0px 20px 0px 10px;
+    float: left;
+}
+
+div.category p {
+    text-align: center;
+}
+
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.popup .content{
+    margin: 10% auto auto auto;
+    width: 1000px;
+    height: 510px;
+    padding: 10px;
+    background-image: url('../img/background3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #555;
+    font-size: 30px;
+    color: #dddddd;
+}
+
+.popup input{
+    font-size: 20px;
+}
+
+.content a {
+    float: right;
+    font-size: 40px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.characteristics {
+    overflow: hidden;
+    margin: 30px auto auto 10px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.buttons button {
+    margin: 10px;
+    width: 415px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #ff5000;
+    color: #dddddd;
+    outline: none;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    background-color: #cc4000;
+}

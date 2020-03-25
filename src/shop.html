@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/category-form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bike-information.js"></script>
+</head>
+<body class='[ { "brand": "Harley-Davidson", "model": "Sportster 1200 Custom", "power": "58 hp", "price": "8 000$",
+                "image": "img/sportster_1200_custom.png", "category": "sportster" },
+                { "brand": "Harley-Davidson", "model": "Sportster Iron 883", "power": "46 hp", "price": "8 000$",
+                "image": "img/sportster_iron883.png", "category": "sportster" },
+                { "brand": "Harley-Davidson", "model": "Sportster SuperLow", "power": "58 hp", "price": "8 000$",
+                "image": "img/sportster_superlow.png", "category": "sportster" },
+                { "brand": "Harley-Davidson", "model": "Dyna Fat Bob", "power": "75 hp", "price": "9 000$",
+                "image": "img/dyna_fatbob.png", "category": "dyna" },
+                { "brand": "Harley-Davidson", "model": "Dyna Low Rider", "power": "75 hp", "price": "9 000$",
+                "image": "img/dyna_lowrider.png", "category": "dyna" },
+                { "brand": "Harley-Davidson", "model": "Dyna Switchback", "power": "75 hp", "price": "9 000$",
+                "image": "img/dyna_switchback.png", "category": "dyna" },
+                { "brand": "Harley Davidson", "model": "Softail Fat Boy Lo", "power": "75 hp", "price": "10 000$",
+                 "image": "img/softail_fatboy_lo.png", "category": "softail" },
+                  { "brand": "Harley Davidson", "model": "Softail Deluxe", "power": "75 hp", "price": "10 000$",
+                 "image": "img/softail_deluxe.png", "category": "softail" },
+                 { "brand": "Harley Davidson", "model": "Softail Breakout", "power": "75 hp", "price": "10 000$",
+                 "image": "img/softail_breakout.png", "category": "softail" }]'>
+<header>
+    <h1>Moto World</h1>
+</header>
+
+<section>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">Motorcycles</a></li>
+            <li><a href="#">Account</a></li>
+            <li class="right"><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div class="category">
+            <h2>Sportster</h2>
+            <hr>
+            <p class="category-layout">
+                <a href="#!" id="sportster" onclick="showCreateForm('sportster')">
+                    <img src="img/add.png" alt="add" class="add-img"></a>
+            </p>
+        </div>
+        <div class="category">
+            <h2>Dyna</h2>
+            <hr>
+            <p class="category-layout">
+                <a href="#!" id="dyna" onclick="showCreateForm('dyna')">
+                    <img src="img/add.png" alt="add" class="add-img"></a>
+            </p>
+        </div>
+        <div class="category">
+            <h2>Softail</h2>
+            <hr>
+            <p class="category-layout">
+                <a href="#!" id="softail" onclick="showCreateForm('softail')">
+                    <img src="img/add.png" alt="add" class="add-img"></a>
+            </p>
+        </div>
+        <div class="popup" id="bikeInformation">
+            <div class="content">
+                <a href="#!" onclick="hidePopup()">&times;</a>
+                <div class="characteristics">
+                    <img src="" class="category-img" id="image">
+                    <p id="brand"></p>
+                    <p id="model"></p>
+                    <p id="power"></p>
+                    <p id="price"></p>
+                </div>
+                <div class="buttons">
+                    <button>Buy</button>
+                    <button>Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="createBike">
+            <div class="content">
+                <a href="#!" onclick="hidePopup()">&times;</a>
+                <div class="characteristics">
+                    <br>
+                    <p><label for="setCategory"><b>Category: </b></label>
+                        <input type="text" id="setCategory" name="setCategory" disabled>
+                        <b>Image: </b><input type="file" id="setImage"></p>
+                    <p><label for="setBrand"><b>Brand: </b></label>
+                        <input type="text" id="setBrand" name="setBrand">
+                        <label for="setPower"><b>Power: </b></label>
+                        <input type="text" id="setPower" name="setPower"></p>
+                    <p><label for="setModel"><b>Model: </b></label>
+                        <input type="text" id="setModel" name="setModel">
+                        <label for="setPrice"><b>Price: </b></label>
+                        <input type="text" id="setPrice" name="setPrice"></p>
+                </div>
+                <div class="buttons">
+                    <button onclick="createBike()">Create</button>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <small>Izhevsk Java Online Course 2019 &ndash; 2020</small>
+</footer>
+</body>
+</html>
